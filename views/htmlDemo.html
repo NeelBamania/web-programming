@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            font-size: 18px;
+        }
+        header {
+            background-color: #3f51b5;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            background-color: #1976d2;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #1565c0;
+            color: black;
+        }
+        section {
+            padding: 2rem;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: sticky;
+            bottom: 0;
+            width: 100%;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 2rem;
+        }
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+        th, td {
+            padding: 1rem;
+            text-align: left;
+        }
+        h2 {
+            color: #3f51b5;
+            font-size: 24px;
+        }
+        p {
+            margin-bottom: 1rem;
+        }
+        img {
+            margin-bottom: 1rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            max-width: 70%;
+            height: auto;
+            display: block;
+            float: left;
+            margin-right: 1rem;
+        }
+        audio, video {
+            margin-bottom: 1rem;
+        }
+        .audio-description {
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>HTML Demo</h1>
+    </header>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/htmlDemo">HTML Demo</a>
+    </nav>
+    <section>
+        <h2>Tables</h2>
+        <table>
+            <caption>Table 1</caption>
+            <thead>
+                <tr>
+                    <th>Header 1</th>
+                    <th>Header 2</th>
+                    <th>Header 3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Row 1, Col 1</td>
+                    <td>Row 1, Col 2</td>
+                    <td>Row 1, Col 3</td>
+                </tr>
+                <tr>
+                    <td>Row 2, Col 1</td>
+                    <td>Row 2, Col 2</td>
+                    <td>Row 2, Col 3</td>
+                </tr>
+                <tr>
+                    <td>Row 3, Col 1</td>
+                    <td>Row 3, Col 2</td>
+                    <td>Row 3, Col 3</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Footer</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <table>
+            <caption>Table 2</caption>
+            <thead>
+                <tr>
+                    <th>Header A</th>
+                    <th>Header B</th>
+                    <th>Header C</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Row A, Col 1</td>
+                    <td>Row A, Col 2</td>
+                    <td>Row A, Col 3</td>
+                </tr>
+                <tr>
+                    <td>Row B, Col 1</td>
+                    <td>Row B, Col 2</td>
+                    <td>Row B, Col 3</td>
+                </tr>
+                <tr>
+                    <td>Row C, Col 1</td>
+                    <td>Row C, Col 2</td>
+                    <td>Row C, Col 3</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Footer</td>
+                </tr>
+            </tfoot>
+        </table>
+        <p>This section demonstrates the use of HTML tables with various elements like caption, thead, tbody, tfoot, th, td, tr, rowspan, and colspan properties.</p>
+        
+        <h2>Lists</h2>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2
+                <ol>
+                    <li>Sub-item 1</li>
+                    <li>Sub-item 2</li>
+                    <li>Sub-item 3</li>
+                </ol>
+            </li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+            <li>Item 5</li>
+        </ul>
+        <p>This section demonstrates the use of nested lists with various types.</p>
+        
+        <h2>Images</h2>
+        <img src="https://www.w3schools.com/images/colorpicker.gif" alt="Color Picker">
+        <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools Logo">
+        <img src="https://www.w3schools.com/images/lamp.jpg" alt="Lamp Image">
+        <p>This section demonstrates the use of images from W3Schools.</p>
+        
+        <h2>Audio</h2>
+        <audio controls>
+            <source src="https://www.w3schools.com/html/horse.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <p class="audio-description">This section demonstrates the use of HTML5 audio element.</p>
+        
+        <h2>Video</h2>
+        <video controls width="480" height="360">
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            <source src="https://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg">
+            <source src="https://www.w3schools.com/html/mov_bbb.webm" type="video/webm">
+            Your browser does not support the video element.
+        </video>
+        <p>This section demonstrates the use of HTML5 video element.</p>
+    </section>
+    <footer>
+        <p>&copy; 2024 Neel Bamania</p>
+    </footer>
+</body>
+</html>
